@@ -1,6 +1,7 @@
 package com.salesmanager.web.shop.controller.product;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -59,8 +60,8 @@ import com.salesmanager.web.utils.ImageFilePathUtils;
 import com.salesmanager.web.utils.LabelUtils;
 import com.salesmanager.web.utils.PageBuilderUtils;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
-
+//import edu.emory.mathcs.backport.java.util.Arrays;
+//TODO AE
 /**
  * Populates the product details page
  * @author Carl Samson

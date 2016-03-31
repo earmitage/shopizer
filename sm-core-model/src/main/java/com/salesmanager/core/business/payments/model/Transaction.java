@@ -17,6 +17,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
@@ -24,12 +25,14 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
-import org.codehaus.jackson.map.ObjectMapper;
+//TODO AE 
+//import org.codehaus.jackson.map.ObjectMapper;
 import org.hibernate.annotations.Type;
 import org.json.simple.JSONAware;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.salesmanager.core.business.common.model.audit.AuditListener;
 import com.salesmanager.core.business.common.model.audit.AuditSection;
 import com.salesmanager.core.business.common.model.audit.Auditable;
@@ -79,8 +82,9 @@ public class Transaction extends SalesManagerEntity<Long, Transaction> implement
 	@Enumerated(value = EnumType.STRING)
 	private PaymentType paymentType;
 	
-	@Column(name="DETAILS")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="DETAILS") 
+	@Lob 
+	//TODO AE
 	private String details;
 	
 	@Transient

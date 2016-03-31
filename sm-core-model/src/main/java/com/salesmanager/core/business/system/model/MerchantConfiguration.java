@@ -13,6 +13,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
@@ -60,8 +61,9 @@ public class MerchantConfiguration extends SalesManagerEntity<Long, MerchantConf
 	private String key;
 
 	
-	@Column(name="VALUE")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="VALUE") 
+	@Lob 
+	//TODO AE
 	private String value;
 	
 	@Column(name="TYPE")

@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
@@ -49,8 +50,9 @@ public class OrderStatusHistory implements Serializable {
 	@Column(name = "CUSTOMER_NOTIFIED")
 	private java.lang.Integer customerNotified;
 	
-	@Column(name = "COMMENTS")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name = "COMMENTS") 
+	@Lob 
+	//TODO AE
 	private String comments;
 	
 	public OrderStatusHistory() {

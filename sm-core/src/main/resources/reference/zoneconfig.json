@@ -940,6 +940,12 @@
 		"zoneName": "Western Australia",
 		"countryCode": "AU"
 	} 
+	
+	{
+		"zoneCode": "ZA",
+		"zoneName": "South Africa",
+		"countryCode": "ZA"
+	} 
 ]  ,
 
   "fr":[

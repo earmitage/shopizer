@@ -13,6 +13,7 @@ import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 import javax.persistence.Transient;
@@ -55,12 +56,14 @@ public class IntegrationModule extends SalesManagerEntity<Long, IntegrationModul
 	@Column(name="REGIONS")
 	private String regions;
 	
-	@Column(name="CONFIGURATION")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="CONFIGURATION") 
+	@Lob 
+	//TODO AE
 	private String configuration;
 	
-	@Column(name="DETAILS")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="DETAILS") 
+	@Lob 
+	//TODO AE
 	private String configDetails;
 	
 	@Column(name="TYPE")

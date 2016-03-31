@@ -2,6 +2,7 @@ package com.salesmanager.web.shop.controller.category;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -50,8 +51,8 @@ import com.salesmanager.web.utils.BreadcrumbsUtils;
 import com.salesmanager.web.utils.LabelUtils;
 import com.salesmanager.web.utils.PageBuilderUtils;
 
-import edu.emory.mathcs.backport.java.util.Collections;
-
+//import edu.emory.mathcs.backport.java.util.Collections;
+//TODO AE
 
 /**
  * Renders a given category page based on friendly url

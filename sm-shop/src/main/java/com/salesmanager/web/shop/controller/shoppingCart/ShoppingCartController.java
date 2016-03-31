@@ -1,5 +1,6 @@
 package com.salesmanager.web.shop.controller.shoppingCart;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.UUID;
@@ -39,8 +40,8 @@ import com.salesmanager.web.shop.controller.ControllerConstants;
 import com.salesmanager.web.shop.controller.shoppingCart.facade.ShoppingCartFacade;
 import com.salesmanager.web.utils.LabelUtils;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
-
+//import edu.emory.mathcs.backport.java.util.Arrays;
+//TODO AE
 
 /**
  * A mini shopping cart is available on the public shopping section from the upper menu

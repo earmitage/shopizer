@@ -5,9 +5,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.codehaus.jackson.annotate.JsonProperty;
+//TODO AE
+//import org.codehaus.jackson.annotate.JsonProperty;
 import org.json.simple.JSONAware;
 import org.json.simple.JSONObject;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Object used to contain the integration information with an external gateway

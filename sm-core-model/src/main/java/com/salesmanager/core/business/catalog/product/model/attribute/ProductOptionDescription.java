@@ -3,6 +3,7 @@ package com.salesmanager.core.business.catalog.product.model.attribute;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
@@ -27,8 +28,9 @@ public class ProductOptionDescription extends Description {
 	@JoinColumn(name = "PRODUCT_OPTION_ID", nullable = false)
 	private ProductOption productOption;
 	
-	@Column(name="PRODUCT_OPTION_COMMENT")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="PRODUCT_OPTION_COMMENT") 
+	@Lob 
+	//TODO AE
 	private String productOptionComment;
 	
 	public ProductOptionDescription() {

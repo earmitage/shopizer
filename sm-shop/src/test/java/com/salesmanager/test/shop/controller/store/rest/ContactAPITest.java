@@ -2,8 +2,6 @@ package com.salesmanager.test.shop.controller.store.rest;
 
 import java.nio.charset.Charset;
 
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.ObjectWriter;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.http.HttpEntity;
@@ -14,6 +12,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import com.salesmanager.core.utils.ajax.AjaxResponse;
 import com.salesmanager.web.entity.shop.ContactForm;
 

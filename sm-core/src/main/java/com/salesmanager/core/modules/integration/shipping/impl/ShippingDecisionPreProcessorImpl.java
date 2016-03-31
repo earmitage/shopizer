@@ -3,6 +3,7 @@ package com.salesmanager.core.modules.integration.shipping.impl;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -25,7 +26,8 @@ import com.salesmanager.core.modules.constants.Constants;
 import com.salesmanager.core.modules.integration.IntegrationException;
 import com.salesmanager.core.modules.integration.shipping.model.ShippingQuotePreProcessModule;
 
-import edu.emory.mathcs.backport.java.util.Collections;
+//TODO AE
+//import edu.emory.mathcs.backport.java.util.Collections;
 
 /**
  * Decides which shipping method is going to be used based on a decision table

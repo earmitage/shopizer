@@ -1,6 +1,7 @@
 package com.salesmanager.web.utils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,8 +21,8 @@ import com.salesmanager.web.entity.shop.Breadcrumb;
 import com.salesmanager.web.entity.shop.BreadcrumbItem;
 import com.salesmanager.web.entity.shop.BreadcrumbItemType;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
-
+//import edu.emory.mathcs.backport.java.util.Arrays;
+//TODO AE
 @Component
 public class BreadcrumbsUtils {
 	

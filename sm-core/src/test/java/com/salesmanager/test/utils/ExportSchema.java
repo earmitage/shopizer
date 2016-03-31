@@ -4,7 +4,7 @@ import java.util.Map;
 
 import javax.persistence.spi.PersistenceUnitInfo;
 
-import org.hibernate.ejb.Ejb3Configuration;
+//import org.hibernate.ejb.Ejb3Configuration;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -37,12 +37,12 @@ public class ExportSchema extends AbstractSalesManagerCoreTestCase {
 	    PersistenceUnitInfo persistenceUnitInfo = entityManagerFactory.getPersistenceUnitInfo();
 	    Map jpaPropertyMap = entityManagerFactory.getJpaPropertyMap();
 
-	    @SuppressWarnings("deprecation")
-		org.hibernate.cfg.Configuration configuration = new Ejb3Configuration().configure( persistenceUnitInfo, jpaPropertyMap ).getHibernateConfiguration();
+	//    @SuppressWarnings("deprecation")
+	//	org.hibernate.cfg.Configuration configuration = new Ejb3Configuration().configure( persistenceUnitInfo, jpaPropertyMap ).getHibernateConfiguration();
 
-	    SchemaExport schema = new SchemaExport(configuration);
-	    schema.setOutputFile("c:/schema.sql");
-	    schema.create(true, false);
+	//    SchemaExport schema = new SchemaExport(configuration);
+	//    schema.setOutputFile("c:/schema.sql");
+	//    schema.create(true, false);
 
 		
 	}

@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
@@ -43,8 +44,9 @@ public class OrderTotal extends SalesManagerEntity<Long, OrderTotal> {
 	@Column (name ="TITLE", nullable=true)
 	private String title;
 	
-	@Column (name ="TEXT", nullable=true)
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column (name ="TEXT", nullable=true) 
+	@Lob 
+	//TODO AE
 	private String text;
 	
 	@Column (name ="VALUE", precision=15, scale=4, nullable=false )

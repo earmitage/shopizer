@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
@@ -47,8 +48,9 @@ public class MerchantLog extends SalesManagerEntity<Long, MerchantLog> implement
 	private String module;
 	
 
-	@Column(name="LOG")
-	@Type(type = "org.hibernate.type.StringClobType")
+	@Column(name="LOG") 
+	@Lob 
+	//TODO AE
 	private String log;
 	
 	public MerchantLog(MerchantStore store, String log) {

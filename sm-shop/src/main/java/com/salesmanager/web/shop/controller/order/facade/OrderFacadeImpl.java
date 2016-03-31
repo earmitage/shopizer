@@ -1,6 +1,7 @@
 package com.salesmanager.web.shop.controller.order.facade;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.LinkedHashSet;
@@ -81,8 +82,8 @@ import com.salesmanager.web.shop.controller.customer.facade.CustomerFacade;
 import com.salesmanager.web.utils.LabelUtils;
 import com.salesmanager.web.utils.LocaleUtils;
 
-import edu.emory.mathcs.backport.java.util.Collections;
-
+//import edu.emory.mathcs.backport.java.util.Collections;
+//TODO AE
 @Service("orderFacade")
 public class OrderFacadeImpl implements OrderFacade {
 	
